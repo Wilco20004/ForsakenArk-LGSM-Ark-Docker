@@ -1,19 +1,12 @@
 ARK: Survival Evolved - Docker
 Docker build for managing an ARK: Survival Evolved server.
 
-This image uses Ark Server Tools to manage an ark server and is forked from turzam/ark.
-
-If you use an old volume, get the new arkmanager.cfg in the template directory.
-Don't forget to use docker pull wilco20004/forsaken_gaming to get the latest version of the image
+This image uses Ark Server Tools to manage an ark server using LGSM
 
 Features
 Easy install (no steamcmd / lib32... to install)
-Use Ark Server Tools : update/install/start/backup/rcon/mods
-Easy crontab configuration
 Easy access to ark config file
-Mods handling (via Ark Server Tools)
 Docker stop is a clean stop
-Auto upgrading of arkmanager
 Usage
 Fast & Easy server setup :
 docker run -d -p 7778:7778 -p 7778:7778/udp -p 27015:27015 -p 27015:27015/udp -e SESSIONNAME=myserver -e ADMINPASSWORD="mypasswordadmin" --name ark wilco20004/forsaken_gaming
