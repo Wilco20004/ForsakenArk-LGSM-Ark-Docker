@@ -73,6 +73,3 @@ RUN linuxgsm.sh arkserver \
   && mkdir -p serverfiles
 
 VOLUME ["/home/lgsm/serverfiles"]
-
-
-CMD ["start"]
