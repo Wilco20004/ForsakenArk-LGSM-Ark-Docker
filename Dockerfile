@@ -75,5 +75,4 @@ RUN linuxgsm.sh arkserver \
 VOLUME ["/home/lgsm/serverfiles"]
 
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["linuxgsm.sh"]
+CMD ["start"]
